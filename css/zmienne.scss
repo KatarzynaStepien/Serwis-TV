@@ -1,0 +1,16 @@
+$new_width: 8.3333%;
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: $new_width * $i;
+  }
+}
+
+@media (max-width: 735px) {
+  .menuHide {
+    display: none;
+  }
+  nav.mobileNav{
+    display: block;
+  }
+}
